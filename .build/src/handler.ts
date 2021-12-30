@@ -1,3 +1,4 @@
+import express from 'express';
 import serverless from 'serverless-http';
 
 const app = express();
@@ -7,6 +8,10 @@ app.get('/', (req, res) =>
     message: 'Hello from root!',
   })
 );
+
+let a;
+const a = 'adasd';
+a ??= a;
 
 app.get('/hello', (req, res) =>
   res.status(200).json({

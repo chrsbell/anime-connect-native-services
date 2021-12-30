@@ -1,0 +1,23 @@
+org: chrsbell
+app: anime-connect-native
+service: user
+frameworkVersion: '2 || 3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: '20201221'
+
+package:
+  patterns:
+    - ./
+
+functions:
+  api:
+    handler: controllers/handler.handler
+    events:
+      - httpApi: '*'
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
