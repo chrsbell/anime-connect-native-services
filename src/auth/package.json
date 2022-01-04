@@ -1,17 +1,17 @@
 {
-  "name": "user",
+  "name": "auth",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "serverless offline start --lambdaPort=3002 --httpPort=3000",
+    "deploy": "serverless deploy",
+    "undeploy": "serverless remove"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.24.0",
-    "lambda-api": "^0.11.2",
-    "neo4j-driver": "^4.4.1"
+    "axios": "^0.24.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
@@ -21,7 +21,6 @@
     "@types/node": "^17.0.5",
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
-    "concurrently": "^6.5.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^16.1.0",

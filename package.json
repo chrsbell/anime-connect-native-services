@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "serverless offline start",
-    "deploy": "serverless deploy",
-    "undeploy": "serverless remove"
-  },
+  "scripts": {},
   "author": "Chris Bell",
   "license": "ISC",
   "dependencies": {},

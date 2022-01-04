@@ -1,9 +1,9 @@
 import { APIGatewayEvent, Context } from 'aws-lambda';
 import createAPI, { Request, Response } from 'lambda-api';
 
-const app = createAPI();
+const userApi = createAPI();
 
-app.get('/oauth/token', (req: Request, res: Response) => res.send('hi'));
+userApi.get('/user', (req: Request, res: Response) => res.send('hi'));
 
 export const handler = async (event: APIGatewayEvent, context: Context) =>
-  await app.run(event, context);
+  await userApi.run(event, context);
