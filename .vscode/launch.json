@@ -6,15 +6,15 @@
       "request": "launch",
       "cwd": "${workspaceFolder}/src/auth",
       "name": "Debug Serverless Auth",
-      "preLaunchTask": "tsc: buildAuth",
+      // "preLaunchTask": "tsc: buildAuth",
       "runtimeExecutable": "node",
       "runtimeArgs": ["--inspect"],
       "program": "${workspaceFolder}/node_modules/serverless/bin/serverless",
       "args": ["offline", "start"],
       "outFiles": ["${workspaceFolder}/src/auth/.build/**/*.js"],
       "port": 9229,
-      "console": "integratedTerminal",
-      "sourceMaps": true
+      "console": "integratedTerminal"
+      // "sourceMaps": true
     }
   ]
 }

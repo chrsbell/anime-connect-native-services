@@ -14,5 +14,6 @@
     "allowJs": false,
     "sourceMap": true
   },
-  "exclude": ["./**/.build", "./**/node_modules", "**/*/.json"]
+  "include": ["src/auth/api.d.ts"],
+  "exclude": ["./**/.build", "node_modules", "**/*/.json"]
 }
